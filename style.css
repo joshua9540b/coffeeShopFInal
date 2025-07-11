@@ -161,7 +161,7 @@ a {
 .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0rem 5rem;
+  /* padding: 0rem 5rem; */
   gap: 2rem;
 }
 
@@ -307,9 +307,7 @@ h2 {
   color: #212529;
   font-weight: 400;
   font-size: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  padding-right: 3rem;
+  text-align: center;
 }
 
 .nameBlock figure img {
@@ -412,7 +410,7 @@ h2 {
   color: #212529;
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1rem;
+  /* line-height: 1rem; */
   margin-top: 2.5rem;
 }
 
@@ -421,6 +419,13 @@ h2 {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1rem;
+}
+
+.copyBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -432,6 +437,11 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0rem 2rem;
+  }
+
+  h1{
+    font-size: 4rem;
+    text-align: center;
   }
 }
 
