@@ -215,17 +215,36 @@ a {
 
 .navBlock ul li a {
   font-family: "Nunito Sans", serif;
-  color: #343A40;
-  font-size: 1.8rem;
-  font-weight: 400;
-  padding: 1rem;
+  color: #666666;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 3px 10px;
 }
 
-.heroBlock{
-  /* background-color: blue; */
+.navBlock #iconToggle {
+  cursor: pointer;
 }
 
-.heroBox{
+.navBlock .hamburgerIcon {
+  color: #666666;
+  font-size: 2.5rem;
+  width: 61.6px;
+  height: 41.6px;
+  border: 0.8px solid gray;
+  border-radius: 4px;
+  padding: 5px 20px;
+  font-weight: 100;
+}
+
+.navBlock #iconToggle {
+  display: none;
+}
+
+.navBlock .hamburgerIcon {
+  display: none;
+}
+
+.heroBox {
   /* background-color: aqua; */
   width: 50%;
 }
@@ -246,7 +265,7 @@ button {
   font-size: 2rem;
 }
 
-.hero{
+.hero {
   background-image: url(./assets/images/home-bg.jpg);
   padding: 24rem 0rem;
   background-position: center;
@@ -264,7 +283,7 @@ button {
   padding-bottom: 2rem;
 }
 
-.profileBlock{
+.profileBlock {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,6 +401,39 @@ h2 {
   height: 70rem;
 }
 
+.infoBlock {
+  padding: 0px 15px;
+  width: 570px;
+}
+
+.infoBlock h3 {
+  color: #212529;
+  font-weight: 600;
+  margin: 0px 0px 10px;
+  width: 538.4px;
+  height: 42px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.infoBox {
+  width: 540px;
+  height: 408.7px;
+  border: 0.8px solid black;
+  margin: 20px;
+  /* Space outside */
+  border-radius: 2px;
+}
+
+form .formGroup input {
+  width: 484.55px;
+  height: 59.5px;
+  margin: 0px 26.925px 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
 .detailsBody i {
   background-color: #be9c79;
   color: white;
@@ -421,7 +473,7 @@ h2 {
   line-height: 1rem;
 }
 
-.copyBox{
+.copyBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,9 +491,35 @@ h2 {
     padding: 0rem 2rem;
   }
 
-  h1{
+  h1 {
     font-size: 4rem;
     text-align: center;
+  }
+
+  .navBlock .hamburgerIcon {
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    right: 5rem;
+  }
+
+  .links {
+    flex-direction: column;
+    display: none;
+  }
+
+  #iconToggle:checked~.links {
+    display: flex;
+  }
+
+  #iconToggle:checked~.links:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  #iconToggle:checked~.links li:hover a {
+    color: #666666;
+    font-weight: 500;
   }
 }
 

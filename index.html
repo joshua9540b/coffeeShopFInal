@@ -27,9 +27,13 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="navBlock dflex"> <!-- 5.column -->
+                    <div class="navBlock dflex-end"> <!-- 5.column -->
                         <div class="navBox"> <!-- 6.subColumn -->
                             <!-- contentContainer -->
+                            <input type="checkbox" id="iconToggle">
+                            <label for="iconToggle" class="hamburgerIcon">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
                             <ul class="links dflex">
                                 <li><a href="">Home</a></li>
                                 <li><a href="">About</a></li>
@@ -379,9 +383,26 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="infoBlock"> <!-- 5.column -->
-                        <div class="infoBox"> <!-- 6.subColumn -->
+                    <div class="infoBlock dflex"> <!-- 5.column -->
+                        <div class="infoBox dflex-col"> <!-- 6.subColumn -->
                             <!-- contentContainer -->
+                             <h3>Book A Table</h3>
+                             <form action="/book">
+
+                                <div class="formGroup dflex">
+                                    <input type="name" placeholder="Enter Your Name">
+                                </div>
+
+                                <div class="formGroup dflex">
+                                    <input type="number" placeholder="Enter Your Number">
+                                </div>
+
+                                <div class="formGroup dflex">
+                                    <input type="number" placeholder="How many guests">
+                                </div>
+
+                             </form>
+                            <button type="send">Send Message</button>
                         </div>
                     </div>
                 </div>
